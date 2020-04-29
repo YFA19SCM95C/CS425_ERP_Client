@@ -1,0 +1,13 @@
+$white: #fff;
+
+.modal_layout {
+  background: $white;
+
+  .modal_layout_content {
+    margin-left: 21px;
+
+    .range_picker {
+      width: 100%;
+    }
+  }
+}

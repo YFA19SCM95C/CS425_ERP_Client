@@ -1,0 +1,57 @@
+{
+  "userlist": {
+    "data": {
+      "code": 1,
+      "tableData": [
+        {
+          "id": 101,
+          "name": "nameA",
+          "date": 1451577600000,
+          "job": "QA"
+        },
+        {
+          "id": 102,
+          "name": "nameB",
+          "date": 1483200000000,
+          "job": "Front-End Dev"
+        },
+        {
+          "id": 103,
+          "name": "nameC",
+          "date": 1514736000000,
+          "job": "Core Server"
+        },
+        {
+          "id": 104,
+          "name": "nameD",
+          "date": 1546272000000,
+          "job": "Product Manager"
+        },
+        {
+          "id": 105,
+          "name": "nameE",
+          "date": 1577808000000,
+          "job": "Project Manager"
+        },
+        {
+          "id": 106,
+          "name": "nameE",
+          "date": 1420041600000,
+          "job": "Dev Ops"
+        }
+      ]
+    }
+  },
+  "loginStatus": {
+    "data": {
+      "code": 1,
+      "status": "1"
+    }
+  },
+  "permissions": {
+    "data": {
+      "code": 1,
+      "permissions": [1, 2, 3]
+    }
+  }
+}

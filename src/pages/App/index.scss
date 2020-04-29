@@ -1,0 +1,37 @@
+$white: #fff;
+
+.header {
+  background: #2673dd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding-left: 24px;
+
+  span {
+    color: $white;
+  }
+
+  .text {
+    padding-left: 17px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $white;
+  }
+
+  .login {
+    float: right;
+    position: relative;
+    color: $white;
+    height: 100%;
+  }
+}
+
+.layout {
+  background: $white;
+  padding: '0 24px 24px 0';
+
+  .breadcrumd {
+    margin-left: 24px;
+    background: $white;
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "name": "IMS",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --open --hot --config webpack.dev.js --port 8081",
+    "build": "webpack --config webpack.prod.js",
+    "lint:js": "eslint ./src/ --ext .ts,.tsx",
+    "lint:css": "stylelint 'src/**/*.scss'; exit 0",
+    "lint": "npm run lint:js & npm run lint:css",
+    "lint:fix": "npm run lint:js -- --fix",
+    "mock": "node_modules/.bin/json-server --watch mock/db.json --port 3000",
+    "mockdev": "npm run mock & npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "sideEffects": false,
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "app/**/*.(ts|tsx|scss)": [
+      "npm run --silent lint:fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-dom": "^16.9.6",
+    "@types/react-router-dom": "^5.1.4",
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "autoprefixer": "^9.7.6",
+    "awesome-typescript-loader": "^5.2.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.2",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^4.0.0",
+    "eslint-plugin-react": "^7.19.0",
+    "faker": "^4.1.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.2.0",
+    "husky": "^4.2.5",
+    "json-server": "^0.16.1",
+    "lint-staged": "^10.1.3",
+    "lodash": "^4.17.15",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.1.3",
+    "stylelint": "^13.3.2",
+    "stylelint-config-standard": "^20.0.0",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.34",
+    "antd": "^4.1.3",
+    "axios": "^0.19.2",
+    "echarts": "^4.7.0",
+    "echarts-for-react": "^2.0.15-beta.1",
+    "mobx": "^5.15.4",
+    "mobx-react-lite": "^2.0.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
+}
