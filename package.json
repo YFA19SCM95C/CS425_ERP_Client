@@ -68,7 +68,7 @@
   "dependencies": {
     "@types/react": "^16.9.34",
     "antd": "^4.1.3",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "echarts": "^4.7.0",
     "echarts-for-react": "^2.0.15-beta.1",
     "mobx": "^5.15.4",
